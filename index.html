@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <title>YourClock</title>
 </head>
 
 <body>
@@ -16,23 +17,38 @@
     form 이 submit된다. 새로고침은 form submit의 기본 동작 -->
 
     <header>
-        <div id="weather">
-            <span></span>
-            <span></span>
-        </div>
+        <!-- <div id="weather">
+            <span class="weather"></span>
+            <span class="city"></span>
+            <img class=" weatherIcon">
+        </div> -->
+        <a href=""><i class="fa-solid fa-file-pen"></i></a>
+        <ul id="weather">
+            <li>
+                <span class="weatherIcon"></span>
+                <span class="temp"></span>
+            </li>
+            <li>
+                <span class="city"></span>
+            </li>
+        </ul>
     </header>
     <section class="main-contents">
-        <h2 id="clock">00:00:00</h2>
-        <form id="login-form" class="hidden">
-            <h2>Please write your name</h2>
-            <input required maxlength="15" type="text" />
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
-
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
-        </form>
-        <ul id="todo-list"></ul>
+        <div id="name-wrapper">
+            <h2 id="clock">00:00:00</h2>
+            <form id="login-form" class="hidden">
+                <h2>Please write your name</h2>
+                <input required maxlength="15" type="text" />
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div>
+        <!-- <div id="todo-wrapper">
+            <form id="todo-form">
+                <span>YOUR MEMO</span>
+                <input type="text" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </div> -->
     </section>
     <footer>
         <div id="quote">

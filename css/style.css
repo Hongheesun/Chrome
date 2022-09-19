@@ -20,22 +20,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* display: grid;
-  grid:
-    "header header header header" 50px
-    "main main main main" 1fr
-    "footer footer footer footer" 100px; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
 }
 
 body #weather {
-  grid-area: header;
   margin-top: 20px;
 }
 body .main-contents {
-  grid-area: main;
+  /* height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
   text-align: center;
   font: inherit;
   font-size: min(28px, 4vw);
@@ -63,18 +57,74 @@ body footer {
   display: none;
 }
 
-/* .main-contents {
-  margin: 0 auto;
-} */
-
-img {
+/* img {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
+} */
+
+/* #weather span:first-child{
+  dis
+} */
+
+/* header #weather li img {
+  font: inherit;
+} */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+header #weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+  line-height: 5px;
+}
+
+header #weather li:first-child {
+  display: flex;
+  align-items: center;
 }
 
 #clock {
   text-align: center;
   font-size: min(180px, 15vw);
+}
+
+#todo-wrapper {
+  margin-top: 15px;
+}
+
+#todo-form input {
+  font-size: 15px;
+  text-align: center;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid floralwhite;
+}
+
+#todo-form span,
+#todo-list span {
+  font-size: min(28px, 2.5vw);
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-list button {
+  background-color: transparent;
+  border: none;
 }
