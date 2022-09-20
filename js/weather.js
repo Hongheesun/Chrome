@@ -26,3 +26,9 @@ function onGeoError() {
   alert("Can't find you. No weather for you.");
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
+const weatherContainer = document.querySelector("#weather");
+function goToKMA() {
+  window.open("https://www.weather.go.kr/", "_blank");
+}
+weatherContainer.addEventListener("click", goToKMA);

@@ -24,6 +24,7 @@ body {
 
 body #weather {
   margin-top: 20px;
+  cursor: pointer;
 }
 body .main-contents {
   /* height: 500px;
@@ -33,6 +34,9 @@ body .main-contents {
   text-align: center;
   font: inherit;
   font-size: min(28px, 4vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* height: 60vh; */
 }
 
@@ -71,11 +75,11 @@ body footer {
 /* header #weather li img {
   font: inherit;
 } */
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 header a {
   margin-left: 20px;
   cursor: pointer;
@@ -100,11 +104,20 @@ header #weather li:first-child {
 }
 
 #todo-wrapper {
-  margin-top: 15px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.371);
+  border-radius: 20px;
+  width: 60%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: min(28px, 1.5vw);
+}
+
+#todo-form div {
+  font-size: min(28px, 1.7vw);
 }
 
 #todo-form input {
-  font-size: 15px;
   text-align: center;
   color: inherit;
   background-color: transparent;
@@ -113,10 +126,10 @@ header #weather li:first-child {
   border-bottom: 3px solid floralwhite;
 }
 
-#todo-form span,
+/* #todo-form span,
 #todo-list span {
   font-size: min(28px, 2.5vw);
-}
+} */
 
 #todo-list li {
   display: flex;
