@@ -110,14 +110,18 @@ header #weather li:first-child {
   width: 60%;
   padding: 10px;
   box-sizing: border-box;
-  font-size: min(28px, 1.5vw);
+  /* font-size:85%; */
+  /* font-size: min(28px, 1.5vw); */
 }
 
 #todo-form div {
-  font-size: min(28px, 1.7vw);
+  /* font-size: 20%; */
+  /* font-size: min(28px, 1.7vw); */
+  font-size: 25px;
 }
 
 #todo-form input {
+  font-size: 18px;
   text-align: center;
   color: inherit;
   background-color: transparent;
@@ -132,6 +136,7 @@ header #weather li:first-child {
 } */
 
 #todo-list li {
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,4 +145,18 @@ header #weather li:first-child {
 #todo-list button {
   background-color: transparent;
   border: none;
+}
+
+@media all and (max-width: 479px) {
+  #todo-wrapper {
+    width: 80%;
+  }
+  #todo-wrapper #todo-form div {
+    font-size: 18px;
+  }
+  #todo-wrapper #todo-form input,
+  #todo-list li span {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
 }
